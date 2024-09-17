@@ -80,9 +80,4 @@ public class WaiterFrame extends JFrame {
 
         setVisible(true);
     }
-
-
-    public static void main(String[] args) {
-        new WaiterFrame();
-    }
 }

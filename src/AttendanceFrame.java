@@ -31,7 +31,7 @@ public class AttendanceFrame extends JFrame {
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery("SELECT * FROM attendance")) {
 
-            tableModel.setRowCount(0); // Clear the table
+            tableModel.setRowCount(0);
 
             while (rs.next()) {
                 int id = rs.getInt("id");
