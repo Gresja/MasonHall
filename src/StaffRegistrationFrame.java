@@ -86,7 +86,7 @@ public class StaffRegistrationFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 registerStaff();
-                loadStaffData();  // Reload the table data
+                loadStaffData();
             }
         });
 
@@ -221,9 +221,5 @@ public class StaffRegistrationFrame extends JFrame {
             ex.printStackTrace();
             JOptionPane.showMessageDialog(this, "Error loading staff data: " + ex.getMessage());
         }
-    }
-
-    public static void main(String[] args) {
-        new StaffRegistrationFrame();
     }
 }
